@@ -114,3 +114,47 @@ body{
 
 /* -------- основная часть (меню) ---------*/
 
+.page_main{
+    width: 1900px;
+    min-height: 900px;
+    background: white;
+    text-align: center;
+}
+
+.container_catalog{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.catalog_title{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.catalog_list{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    margin-left: 15px; 
+    gap: 38px 30px;
+    margin-top: 48px;
+    list-style: none;
+}
+
+.catalog_text{
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: black;
+}
+
+/* -------- футер (подвал) страницы ---------*/
