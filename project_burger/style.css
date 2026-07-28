@@ -1,0 +1,116 @@
+* {
+    padding: 0; /* отменяем отступы внутри элементов */
+    margin: 0; /* отменяем отступы вокруг элементов */
+    box-sizing: border-box; /* включает padding и border ВНУТРЬ заданной ширины */
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    margin: 0 auto; /* отступ снизу и сверху, автомат. выравнивание (по горизонтали)*/
+    height: 100%; /* высота элемента body от высоты родительского эл-та */
+    flex-direction: column; /* вертикальное направление главной оси контейнера */ 
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px; /* расстояние между строками */
+    color: black;
+    background-color: white;
+}
+
+/* -------- шапка ---------*/
+
+.page_header{
+    width: 1900px;
+    min-height: 900px;
+    background: linear-gradient(180deg, #EDA418 47.5%, rgba(237, 164, 24, 0) 100%);
+}
+
+.navigation{
+    display: flex; 
+    flex-wrap: wrap; /* переносит эл-ты на новую строку, если не помещаются */
+    justify-content: center; /* чтобы все эл-ты располагались в центре*/
+    min-height: 70px;
+    padding-top: 105px; 
+    padding-right: 65px;
+}
+
+.logo{
+    display: block; /* элемент logo как блочный элемент*/
+    margin-top: 8px;
+
+}
+
+.navigation_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* промежуток между элементами */
+    margin: auto 0;
+    padding: 0;
+    margin-left: 149px;
+    list-style: none; /* удаляет маркеры списка из элементов */
+}
+
+.navigation_title_main{
+    display: block;
+    min-width: 200px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration: none; /* убрать подчеркивания*/
+    color: black;
+}
+
+.navigation_button{
+    display: inline-block; /* элемент как встроенный блок*/
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border: none; /* удаляет границу у элемента*/
+    border-radius: 100px;
+}
+.container_page_header{
+    display: flex;
+    padding-top: 25px;
+    gap: 20px;
+    padding-left: 300px;
+}
+.text_header_list{
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.text_header{
+    margin: 0;
+    padding: 0;
+    padding-top: 190px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+}
+.text_header_discount{
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.container_button_header{
+    display: block;
+    margin: 0;
+    padding: 25px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+    color: white;
+    background: #E52626;
+    border-radius: 50px;
+    border: none;
+}
+
+/* -------- основная часть (меню) ---------*/
+
