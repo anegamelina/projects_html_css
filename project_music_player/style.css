@@ -1,0 +1,113 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box; /* включает padding и border ВНУТРЬ заданной ширины */
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    flex-direction: column; 
+    color: white;
+    background-color: black;
+}
+
+/* ---------- шапка ----------*/
+
+.page_header{
+    width: 100%;
+    min-height: 900px;
+    background-image: url("images/sky_background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 47px; 
+    margin-left: 122px;
+}
+
+.mp_logo{
+    width: 53px;
+    height: 80px;
+    margin-right: 190px;
+}
+
+.navigation_list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.navigation_title_main{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header_main {
+    display: flex;
+    min-height: 700px;
+}
+
+
+.header_title_mp{
+    text-align: left;
+    margin-top: 164px;
+    margin-left: 115px;
+}
+
+.title_mp{
+    font-size: 150px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: fantasy;
+}
+
+.header_title_text{
+    text-align: left;
+    margin-top: 175px;
+    margin-left: 115px;
+}
+
+.title_text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header_main_imgs{
+    position: relative;
+    width: 500px;
+    margin-left: 700px;
+}
+
+.iphone_img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    position: relative; /* чтобы работал z-index */
+    z-index: 2; /* больше -> выше по приоритету */
+}
+
+.kabel_img{
+    position: absolute;
+    bottom: -7px;
+    left: 10%;
+    width: 350px;
+    z-index: 1; /* меньше -> ниже по приоритету (позади) */
+}
