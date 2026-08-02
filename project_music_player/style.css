@@ -10,6 +10,7 @@ html {
 
 body{
     min-height: 100vh;
+    display: flex;
     flex-direction: column; 
     color: white;
     background-color: black;
@@ -23,34 +24,32 @@ body{
     background-image: url("images/sky_background.png");
     background-size: cover;
     background-position: center;
+    padding-top: 47px;
+    padding-left: 122px;
+    padding-right: 122px;
+    overflow: hidden; /* обрезает все, что выходит за пределы шапки*/
 }
 
 .navigation{
     display: flex; 
     flex-wrap: wrap;
-    margin-top: 47px; 
-    margin-left: 122px;
+    align-items: center;
+    gap: 50px;
 }
 
 .mp_logo{
     width: 53px;
     height: 80px;
-    margin-right: 190px;
 }
 
 .navigation_list{
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 150px;
-    margin-top: 30px;
     list-style: none;
 }
 
 .navigation_title_main{
-    display: block;
-    text-align: center;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -61,14 +60,15 @@ body{
 
 .header_main {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     min-height: 700px;
+    gap: 50px;
 }
 
 
 .header_title_mp{
-    text-align: left;
-    margin-top: 164px;
-    margin-left: 115px;
+    margin-bottom: 30px;
 }
 
 .title_mp{
@@ -76,12 +76,11 @@ body{
     text-transform: uppercase;
     font-weight: 500;
     font-family: fantasy;
+    line-height: 1;
 }
 
 .header_title_text{
-    text-align: left;
-    margin-top: 175px;
-    margin-left: 115px;
+    margin-top: 30px;
 }
 
 .title_text{
@@ -92,13 +91,11 @@ body{
 .header_main_imgs{
     position: relative;
     width: 500px;
-    margin-left: 700px;
+    flex-shrink: 0; /* не сжимается*/
 }
 
 .iphone_img{
     display: block;
-    margin: 0;
-    padding: 0;
     width: 500px;
     position: relative; /* чтобы работал z-index */
     z-index: 2; /* больше -> выше по приоритету */
@@ -106,8 +103,62 @@ body{
 
 .kabel_img{
     position: absolute;
-    bottom: -7px;
-    left: 10%;
+    bottom: -10px;
+    left: 35%;
+    transform: translateX(-35%);
     width: 350px;
     z-index: 1; /* меньше -> ниже по приоритету (позади) */
+}
+
+/* ---------- main - music ----------*/
+.page_main{
+    flex: 1;
+}
+
+.main_music{
+    width: 100%;
+    min-height: 1024px;
+    background-color: #D53005;
+    padding-top: 83px;
+    padding-left: 122px;
+    padding-right: 122px;
+}
+
+.title_music{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.music_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons_music{
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    padding-top: 10px;
+    list-style: none;
+}
+
+.buttons_music_main{
+    width: 383px;
+    height: 83px;
+    background: radial-gradient(circle at left, #B13E18, #F3501A);
+    padding: 18px 93px; 
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* тень:  сдвиг_вправо сдвиг_вниз размытие цвет */
+    cursor: pointer; /* курсор-рука */
+}
+
+.buttons_music_main:hover{
+    background: radial-gradient(circle at left, #8d3113, #b93d14);
+}
+
+.music_img{
+    margin-right: -125px;
 }
