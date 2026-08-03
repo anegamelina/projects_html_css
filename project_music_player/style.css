@@ -122,6 +122,7 @@ body{
     padding-top: 83px;
     padding-left: 122px;
     padding-right: 122px;
+    overflow: hidden;
 }
 
 .title_music{
@@ -161,4 +162,31 @@ body{
 
 .music_img{
     margin-right: -125px;
+}
+
+/* ---------- main - about ----------*/
+
+.main_about{
+    width: 100%;
+    min-height: 1024px;
+    background: linear-gradient(to top, black 90%, #D53005 100%);
+    padding-top: 83px;
+    padding-left: 122px;
+    padding-right: 122px;
+    overflow: hidden;
+}
+
+.title_about{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main_text_about{
+    text-align: center;
+    padding-top: 358px;
+}
+
+.text_about{
+    font-size: 30px;
+    font-weight: 400;
 }
