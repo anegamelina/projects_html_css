@@ -190,3 +190,91 @@ body{
     font-size: 30px;
     font-weight: 400;
 }
+
+/* ---------- main - store ----------*/
+
+.main_store{
+    width: 100%;
+    min-height: 1024px;
+    background-color: #D53005;
+    padding-top: 83px;
+    padding-left: 122px;
+    padding-right: 122px;
+    overflow: hidden;
+}
+
+.title_store{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.buttons_store{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 136px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.button_windows{
+    width: 240px;
+    height: 60px;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button_macos{
+    width: 240px;
+    height: 60px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button_windows:hover{
+    color: rgb(130, 129, 129);
+}
+
+.button_macos:hover{
+    background-color: rgb(186, 186, 186);
+}
+
+.version_store{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-top: 135px;
+    list-style: none;
+}
+
+.title_version{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.text_version{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.link_version{
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+
+.store_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
