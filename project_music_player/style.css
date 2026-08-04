@@ -278,3 +278,70 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
+/* ---------- footer ----------*/
+
+.page_footer{
+    width: 100%;
+    min-height: 536px;
+    background: linear-gradient(to top, black 90%, #D53005 100%);
+    overflow: hidden;
+}
+
+.footer_mp_info{
+    display: flex;
+    flex-direction: row;
+    gap: 147px;
+    padding-left: 700px;
+    padding-top: 120px;
+}
+
+.footer_mp_store, .footer_mp_values, .footer_account{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+}
+
+.footer_mp_store_title, .footer_mp_values_title, .footer_account_title{
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer_mp_store_vars, .footer_mp_values_vars, .footer_account_vars{
+    color: rgba(255, 255, 255, 0.729);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer_title_mp{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: fantasy;
+    padding-left: 110px;
+    padding-top: 76px;
+}
+
+.footer_info{
+    padding-left: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    padding-top: 10px;
+    list-style: none;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.729);
+}
+
+.footer_info_vars{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.729);
+}
