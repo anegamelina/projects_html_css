@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('fonts/RobotoSlab-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    color: black;
+    background-color: white;
+    font-family: 'RobotoSlab';
+}
+
+/* ---------- шапка ----------*/
+
+.page_header{
+    width: 100%;
+    min-height: 900px;
+    padding-top: 39px;
+    overflow: hidden; 
+}
+
+.navigation{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+}
+
+.navigation_list{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 43px;
+    list-style: none;
+}
+
+.navigation_title_main{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.nature_logo_text{
+    font-size: 10px;
+    text-align: center;
+}
+
+.header_button_start{
+    width: 216px;
+    height: 41px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #666666;
+    margin-right: 60px;
+}
+
+.header_button_start:hover{
+    background: rgb(218, 218, 218);
+}
+
+.header_button_text{
+    font-size: 18px;
+    padding: 10px 30px; 
+}
+
+.header_main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/pic_surikat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header_text_1{
+    font-size: 100px;
+    color: white;
+    padding-left: 90px;
+    align-self: flex-start; /* текст прижат к левому краю */
+}
+
+.header_text_2{
+    font-size: 20px;
+    color: white;
+    padding-right: 100px;
+    text-align: right;
+    align-self: flex-end; /* текст прижат к правому краю */
+}
+
+.header_main_button{
+    align-self: center; /* центрирует по горизонтали */ 
+}
+
+.header_button_help{
+    width: 140px;
+    height: 140px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    outline: 1px solid white;
+    outline-offset: 10px;
+}
+
+.header_button_help_text{
+    font-size: 22px;
+    color: #BF632F;
+}
+
+.header_button_help:hover{
+    background: rgb(218, 218, 218);
+}
