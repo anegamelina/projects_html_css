@@ -137,3 +137,80 @@ body{
 .header_button_help:hover{
     background: rgb(218, 218, 218);
 }
+
+
+/* ---------- main - our_mission ----------*/
+
+.main_our_mission{
+    width: 100%;
+    min-height: 1024px;
+    overflow: hidden;
+    padding-top: 128px;
+    padding-left: 60px;
+    padding-right: 350px;
+}
+
+.main_text_plus_image{
+    display: flex;
+    flex-direction: row;
+    gap: 107px;
+}
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    word-wrap: break-word;
+}
+
+.main_text_1{
+    font-size: 30px;
+}
+
+.main_text_2{
+    font-size: 20px;
+}
+
+.main_button{
+    font-size: 30px;
+    width: 751px;
+    height: 66px;
+    align-self: center;
+    border-radius: 50px;
+    background-color: #BC5E28;
+    border: none;
+    cursor: pointer;
+}
+
+.main_button:hover{
+    background-color: #8f481f;
+}
+
+.main_numbers_results{
+    padding-top: 82px;
+}
+
+.main_res_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 колонки равной ширины */
+    gap: 38px 80px; /* отступы между строками и колонками */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.main_res_list li {
+    text-align: center;
+}
+
+.main_nums_list {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.main_text_list {
+    font-size: 30px;
+    font-weight: 400;
+    white-space: nowrap; /* текст в одну строку */
+}
