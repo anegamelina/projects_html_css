@@ -146,7 +146,7 @@ body{
     overflow: hidden;
     padding-top: 128px;
     padding-left: 60px;
-    padding-right: 350px;
+    padding-right: 60px;
 }
 
 .main_text_plus_image{
@@ -223,7 +223,7 @@ body{
     overflow: hidden;
     padding-top: 141px;
     padding-left: 60px;
-    padding-right: 153px;
+    padding-right: 60px;
     display: flex;
     flex-direction: row;
     gap: 75px;
@@ -300,4 +300,58 @@ body{
     font-size: 24px;
     color: black;
     margin-left: 20px;
+}
+
+
+/* ---------- main - donate ----------*/
+
+.main_donate{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/pic_elephants.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: content-box;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_donate_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main_donate_title{
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.main_donate_info{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.main_donate_button{
+    background: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 400px;
+    border-color: white;
+    align-self: center;
+    padding: 10px 0;
+}
+
+.main_donate_button:hover{
+    color: rgb(224, 224, 224);
+    background: rgba(0, 0, 0, 30%);
 }
