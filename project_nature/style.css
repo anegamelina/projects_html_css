@@ -143,7 +143,6 @@ body{
 
 .main_our_mission{
     width: 100%;
-    min-height: 1024px;
     overflow: hidden;
     padding-top: 128px;
     padding-left: 60px;
@@ -213,4 +212,92 @@ body{
     font-size: 30px;
     font-weight: 400;
     white-space: nowrap; /* текст в одну строку */
+}
+
+/* ---------- main - how_we_work ----------*/
+
+.main_how_we_work{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 141px;
+    padding-left: 60px;
+    padding-right: 153px;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    min-height: 1024px;
+}
+
+.main_hww_images{
+    display: flex;
+    flex-direction: column;
+    gap: 93px;
+}
+
+.hww_image_1{
+    width: 317px;
+    height: 317px;
+}
+
+.hww_image_2{
+    width: 240px;
+    height: 240px;
+    margin-left: 267px;
+}
+
+.hww_text_info{
+    margin-left: 103px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.hww_text_info h1{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hww_text_main{
+    font-size: 14px;
+    text-align: center;
+}
+
+.hww_text_list{
+    font-size: 23px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+    max-width: 705px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hww_text_list li {
+    position: relative;
+    padding: 12px 0 0 0;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hww_text_list li:last-child {
+    position: relative;
+    padding-bottom: 32px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hww_text_list li::after {
+    content: '→';
+    font-size: 24px;
+    color: black;
+    margin-left: 20px;
 }
