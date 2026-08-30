@@ -355,3 +355,134 @@ body{
     color: rgb(224, 224, 224);
     background: rgba(0, 0, 0, 30%);
 }
+
+
+/* ---------- footer ----------*/
+
+.page_footer{
+    width: 100%;
+    padding: 122px 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 40px;
+}
+
+.footer_lists{
+    display: flex;
+    flex-direction: row;
+    gap: 153px;
+    border-top: 2px solid black;
+    padding-top: 28px;
+    flex-wrap: wrap;
+}
+
+.footer_list_title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer_list_item{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.list_nature, .list_animals, .list_contacts{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscribe_form{
+    padding-left: 210px;
+}
+
+.subscribe_title{
+    font-size: 20px;
+}
+
+.form_registration{
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #979797;
+}
+
+.form_email{
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #979797;
+    outline: none;
+}
+
+.form_email:focus {
+    border-bottom-color: #4e4e4e;
+}
+
+.form_agree_tick{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.form_agree{
+    font-size: 12px;
+}
+
+#agree_tick {
+    border: #979797;
+    border-radius: 2px;
+    cursor: pointer;  
+}
+
+.subscribe_socials{
+    padding-top: 74px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.subscribe_buttons{
+    color: #979797;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    border-color: #979797;
+    padding: 10px 20px;
+    align-self: center;
+}
+
+.subscribe_buttons:hover{
+    color: #888888;
+    background-color: rgb(224, 224, 224);
+    border-color: #807f7f;
+}
+
+.footer_info{
+    display: flex;
+    flex-direction: row;
+}
+
+.nature_logo_f{
+    width: 100px;
+}
+
+.nature_logo_text_f{
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer_address_phone, .footer_creators{
+    padding-top: 90px;
+    padding-left: 250px;
+}
+
+.footer_info_text{
+    font-size: 12px;
+    color: #979797;
+}
